@@ -1,0 +1,7 @@
+{
+  "galaxy.meteor.com": {
+     "env": {
+       "MONGO_URL": "mongodb://pedder:pedder@ds239368.mlab.com:39368/pedder"
+     }
+   }
+}

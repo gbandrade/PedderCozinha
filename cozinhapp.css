@@ -10,10 +10,6 @@ html body {
 	font-family: Roboto;
 }
 
-.lista-pedidos {
-	margin-top: 24px;
-}
-
 .mdl-card.pedido {
 	margin: 24px auto;
 	min-height: 0;
@@ -46,7 +42,157 @@ html body {
 	font-style: italic;
 }
 
-header.mdl-layout__header {
+.produtoTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.produtoDescricao {
+    width: 80%;
+    font-size: 13px;
+    font-weight: normal !important;
+}
+
+.produtoTitle,
+.produtoDescricao {
+    color: rgba(0,0,0,.54);
+}
+
+.produto {
+    width: 100%;
+}
+
+.produto img {
+    margin: 0 10px 10px 0;
+}
+
+.produto .preco {
+    padding: 10px 0;
+    width: 80%;
+    font-size: 13px;
+    font-weight: normal !important;
+}
+
+header.mdl-layout__header,
+div.mdl-layout__tab-bar,
+div.mdl-layout__tab-bar-button  {
 	background-color: #B71C1C;
-	color:#FFF;
+}
+
+.tRight {
+	text-align: right;
+}
+
+.tLeft{
+	text-align: left !important;
+}
+
+.fLeft{
+    float:left;
+}
+
+.clear {
+    clear:both;
+}
+
+.width100 {
+	    width: 100%;
+}
+
+main#addItemCardapio h1,
+main#addItemCardapio label {
+	color: #B71C1C !important;
+}
+
+.btnSubmit {
+	border-color: #B71C1C !important;
+    background-color: #B71C1C !important;
+    color: #FFF !important;
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    line-height: 1.42857143 !important;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload,
+#img-produto {
+    width: 100px;
+    height: 100px;
+}
+
+img:not([src]) {
+	display: none;
+}
+
+img.resize {
+    width: 100px;
+    height: 100px;
+}
+
+.preco {
+	color: green !important;
+    font-weight: bold !important;
+}
+
+.mdl-layout-title {
+	font-weight: 500;
+    text-shadow: 2px 2px 4px #000000;	
+}
+
+.mdl-button--file input{
+    cursor: pointer;
+    height: 100%;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    z-index: 4;
+}
+
+.mdl-textfield--file .mdl-textfield__input {
+    box-sizing: border-box;
+    width: calc(100% - 32px);
+ }
+ 
+.mdl-textfield--file .mdl-button--file {
+    right: 0;
+}
+
+.mdl-button--accent.mdl-button--accent {
+    color: rgb(255,82,82) !important;
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+	background-color: white !important;
+}
+
+.itensPedidos {
+	padding-left: 15px;
+    border-left: #b71c1c solid;	
+}
+
+.totalPreco {
+	padding-left: 15px;
+    border-left: green solid;	
 }

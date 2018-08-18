@@ -1,0 +1,374 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html body {
+	font-family: Roboto;
+}
+
+.mdl-card.pedido {
+	margin: 24px auto;
+	min-height: 0;
+	max-width: 800px;
+	width: 90%;
+}
+
+.pedido-data {
+	color: #999;
+	float: right;
+	font-size: 90%;
+	margin-right: 0.5em;
+	font-weight: 400;
+}
+
+.sem-pedidos-container {
+	display: table;
+	height: 80vh;
+	width: 100%;
+}
+
+.sem-pedidos {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+
+	text-shadow: 0 0 2px rgba(0,0,0,0.05);
+	color: #ddd;
+	font-size: 3em;
+	font-style: italic;
+}
+
+header.mdl-layout__header,
+div.mdl-layout__tab-bar,
+div.mdl-layout__tab-bar-button  {
+	background-color: #B71C1C;
+}
+
+.tRight {
+	text-align: right;
+}
+
+main#addItemCardapio h1,
+main#addItemCardapio label {
+	color: #B71C1C !important;
+}
+
+.btnSubmit {
+	border-color: #B71C1C !important;
+    background-color: #B71C1C !important;
+    color: #FFF !important;
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    line-height: 1.42857143 !important;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100px;
+    height: 100px;
+}
+
+img:not([src]) {
+	display: none;
+}
+
+.preco {
+	/* color: green !important; */
+    font-weight: bold !important;
+	padding-top: 0 !important;
+}
+
+.mdl-layout-title {
+	font-weight: 500;
+    text-shadow: 2px 2px 4px #000000;	
+}
+
+.mdl-button--file input{
+    cursor: pointer;
+    height: 100%;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    z-index: 4;
+}
+
+.mdl-textfield--file .mdl-textfield__input {
+    box-sizing: border-box;
+    width: calc(100% - 32px);
+ }
+ 
+.mdl-textfield--file .mdl-button--file {
+    right: 0;
+}
+
+.mdl-button--accent.mdl-button--accent {
+    color: rgb(255,82,82) !important;
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+	background-color: white !important;
+}
+
+.itensPedidos {
+	padding-left: 15px;
+    border-left: #b71c1c solid;	
+}
+
+.totalPreco {
+	padding-left: 15px;
+    border-left: green solid;	
+}
+
+.sem-pedidos-container .sem-pedidos {
+	line-height: 40px;	
+}
+
+@media screen and (max-width: 1024px) {
+	.mdl-layout__header-row {
+		padding-left: 40px !important;
+	}
+}
+
+.demo-list-three {
+  width: 650px;
+}
+
+.botaoAdicionarProduto {
+    float: right;
+	background: rgb(244,67,54) !important;
+	position: fixed !important;
+	right: 50px;
+	bottom: 30px;
+	z-index: 998;	
+}
+
+.modal-dialog .modal-content {
+    border: none !important;
+    box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2) !important;
+	border-radius: 0 !important;
+	padding: 1em !important;
+}
+
+.mdl-layout__tab {
+    color: rgba(255,255,255,.6) !important;
+    text-decoration: none !important;
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active {
+    color: rgb(255,255,255) !important;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.modal-header {
+    border-bottom: none !important;
+	padding: 0 !important;
+}
+
+.modal-footer {
+    border-top: none !important;
+}
+
+label {
+	font-weight: 400 !important;
+	margin-bottom: 0 !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bdbdbd;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #bdbdbd;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #bdbdbd;
+}
+
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+    color: rgb(255,255,255) !important;
+    background-color: rgb(244,67,54) !important;
+}
+
+.demo-card-image.mdl-card {
+  width: 256px;
+  height: 256px;
+  margin-left: 8px;
+}
+
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.avatar-imagem-produto {
+	border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    float: left;
+}
+
+.produtoDescricao {
+    width: 80%;
+    font-size: 13px;
+    font-weight: normal !important;
+}
+
+.produtoTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+	width: 80%;
+}
+
+.produtoTitle, .produtoDescricao {
+    color: rgba(0,0,0,.54);
+}
+
+.produto .preco,
+.produto .produtoDescricao {
+    padding-top: 10px;
+    width: 80%;
+    font-size: 13px;
+    font-weight: normal !important;
+}
+
+.fLeft {
+    float: left;
+}
+
+.red {
+	color: rgb(244,67,54);
+}
+
+.gray {
+	color: rgba(0,0,0,.54);
+}
+
+.mdl-grid.mdl-dialog__content p {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+td.descricaoProduto
+{
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.mdl-data-table td:first-of-type, .mdl-data-table th:first-of-type {
+    width: 130px;
+}
+
+.floatRight {
+	float: right;
+}
+
+a {
+	color: inherit !important;
+	cursor: pointer;
+	width: unset !important;
+}
+
+a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+.table-responsive {
+    min-height: .01% !important;
+    overflow-x: auto !important;
+}
+@media screen and (max-width: 767px) {
+    .table-responsive {
+        width: 100% !important;
+        overflow-y: hidden !important;
+        -ms-overflow-style: -ms-autohiding-scrollbar !important;
+        border: 1px solid #ddd !important;
+    }
+    .table-responsive > .table {
+        margin-bottom: 0;
+    }
+    .table-responsive > .table > thead > tr > th,
+    .table-responsive > .table > tbody > tr > th,
+    .table-responsive > .table > tfoot > tr > th,
+    .table-responsive > .table > thead > tr > td,
+    .table-responsive > .table > tbody > tr > td,
+    .table-responsive > .table > tfoot > tr > td {
+        white-space: nowrap;
+    }
+    .table-responsive > .table-bordered {
+        border: 0;
+    }
+    .table-responsive > .table-bordered > thead > tr > th:first-child,
+    .table-responsive > .table-bordered > tbody > tr > th:first-child,
+    .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+    .table-responsive > .table-bordered > thead > tr > td:first-child,
+    .table-responsive > .table-bordered > tbody > tr > td:first-child,
+    .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+        border-left: 0;
+    }
+    .table-responsive > .table-bordered > thead > tr > th:last-child,
+    .table-responsive > .table-bordered > tbody > tr > th:last-child,
+    .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+    .table-responsive > .table-bordered > thead > tr > td:last-child,
+    .table-responsive > .table-bordered > tbody > tr > td:last-child,
+    .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+        border-right: 0;
+    }
+    .table-responsive > .table-bordered > tbody > tr:last-child > th,
+    .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+    .table-responsive > .table-bordered > tbody > tr:last-child > td,
+    .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+        border-bottom: 0;
+    }
+}
+
+.mdl-spinner {
+    position: fixed;
+    z-index: 999;
+    height: 3em;
+    width: 3em;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
