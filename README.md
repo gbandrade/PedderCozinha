@@ -1,1 +1,1 @@
-É um projeto Meteor que simula o back-end do projeto do livro de *Cordova e PhoneGap*.
+Projeto Meteor para gerenciamento de pedidos de restaurantes.
